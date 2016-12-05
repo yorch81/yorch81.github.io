@@ -1,16 +1,21 @@
 /**
  * netWf JavaScript Client
  *
- * @param  string authKey Authentication Key
+ * @author Jorge Alberto Ponce T. <the.yorch@gmail.com>
+ * @license Apache-2.0
+ * @version 1.0.0
+ * @constructor
+ * 
+ * @param {string} authKey Authentication Key
  */
-function netWf(authKey){   
+function netWf(authKey){
+
   /**
    * Gets Table Rows with limit
-   *
-   * @param  string name Table Name
-   * @param  int    limit Limit of Rows
+   * 
+   * @param  {string}   name     Table Name
+   * @param  {int}   limit    Limit of Rows
    * @param  {Function} callback CallBack Function
-   * @return JSON   Json Table    
    */
   this.table = function(name, limit, callback){
     var url = "/api/table/" + name + "/" + limit + "?auth=" + authKey;
@@ -24,12 +29,11 @@ function netWf(authKey){
 
   /**
    * Gets Row By Id
-   *
-   * @param  string name     Table Name
-   * @param  string fieldkey Field Key
-   * @param  int    key      Key Value
+   * 
+   * @param  {string}   name     Table Name
+   * @param  {string}   fieldkey Field Key
+   * @param  {int}       key      Key Value
    * @param  {Function} callback CallBack Function
-   * @return JSON            Json Table
    */
   this.tableById = function(name, fieldkey, key, callback){
     var url = "/api/tablebyid/" + name + "/" + fieldkey + "/" + key + "?auth=" + authKey;
@@ -43,12 +47,11 @@ function netWf(authKey){
 
   /**
    * Get First Row of Table
-   *
-   * @param  string table    Table Name
-   * @param  string fieldkey Field Key
-   * @param  string where    where condition '*' not where
-   * @param {Function} callback CallBack Function
-   * @return JSON            Json Table
+   * 
+   * @param  {string}   table    Table Name
+   * @param  {string}   fieldkey Field Key
+   * @param  {string}   where    Where condition '*' not where
+   * @param  {Function} callback CallBack Function
    */
   this.first = function(table, fieldkey, where, callback){
     var url = "/api/first/" + table + "/" + fieldkey + "/0/" + where + "?auth=" + authKey;
@@ -62,13 +65,12 @@ function netWf(authKey){
 
   /**
    * Gets Previous Row of Table
-   *
-   * @param  string table    Table Name
-   * @param  string fieldkey Field Key
-   * @param  int    key      Key Value
-   * @param  string where    where condition '*' not where
-   * @param {Function} callback CallBack Function
-   * @return JSON            Json Table
+   * 
+   * @param  {string}   table    Table Name
+   * @param  {string}   fieldkey Field Key
+   * @param  {int}      key      Key Value
+   * @param  {string}  where    Where condition '*' not where
+   * @param  {Function} callback CallBack Function
    */
   this.previous = function(table, fieldkey, key, where, callback){
     var url = "/api/previous/" + table + "/" + fieldkey + "/" + key + "/" + where + "?auth=" + authKey;
@@ -82,13 +84,12 @@ function netWf(authKey){
 
   /**
    * Gets Next Row of Table
-   *
-   * @param  string table    Table Name
-   * @param  string fieldkey Field Key
-   * @param  int    key      Key Value
-   * @param  string where    where condition '*' not where
-   * @param {Function} callback CallBack Function
-   * @return JSON            Json Table
+   * 
+   * @param  {string}   table    Table Name
+   * @param  {string}   fieldkey Field Key
+   * @param  {int}      key      Key Value
+   * @param  {string}   where    Where condition '*' not where
+   * @param  {Function} callback CallBack Function
    */
   this.next = function(table, fieldkey, key, where, callback){
     var url = "/api/next/" + table + "/" + fieldkey + "/" + key + "/" + where + "?auth=" + authKey;
@@ -102,12 +103,11 @@ function netWf(authKey){
 
   /**
    * Get Last Row of Table
-   *
-   * @param  string table    Table Name
-   * @param  string fieldkey Field Key
-   * @param  string where    where condition '*' not where
-   * @param {Function} callback CallBack Function
-   * @return JSON            Json Table
+   * 
+   * @param  {string}   table    Table Name
+   * @param  {string}   fieldkey Field Key
+   * @param  {string}   where    Where condition '*' not where
+   * @param  {Function} callback CallBack Function
    */
   this.last = function(table, fieldkey, where, callback){
     var url = "/api/last/" + table + "/" + fieldkey + "/0/" + where + "?auth=" + authKey;
@@ -121,11 +121,10 @@ function netWf(authKey){
 
   /**
    * Execute Stored Procedure from Api
-   *
-   * @param  string procedure Procedure Name
-   * @param  array parameters Array of Parameters of Stored Procedure
-   * @param {Function} callback CallBack Function
-   * @return JSON            Json Table
+   * 
+   * @param  {string}   procedure  Procedure Name
+   * @param  {JSON}     parameters JSON Parameters of Stored Procedure
+   * @param  {Function} callback   CallBack Function
    */
   this.procedure = function(procedure, parameters, callback){
     var url = "/api/procedure/" + procedure + "?auth=" + authKey;
@@ -138,11 +137,10 @@ function netWf(authKey){
 
   /**
    * Execute Remote SQL Script from Api
-   *
-   * @param  string scriptName SQL Script Name
-   * @param  array parameters Array of Parameters of Script
-   * @param {Function} callback CallBack Function
-   * @return JSON            Json Table
+   * 
+   * @param  {string}   scriptName SQL Script Name
+   * @param  {JSON}     parameters JSON Parameters of Script
+   * @param  {Function} callback   CallBack Function
    */
   this.script = function (scriptName, parameters, callback) {
       var url = "/api/script/" + scriptName + "?auth=" + authKey;
@@ -156,8 +154,8 @@ function netWf(authKey){
 
 /**
  * Check Local Storage
- *
- * @return boolean
+ * 
+ * @return {boolean}
  */
 netWf.checkStorage = function(){
 	if(typeof(Storage) !== "undefined") {
@@ -169,10 +167,10 @@ netWf.checkStorage = function(){
 
 /**
  * Check User and Password
- *
- * @param  string user     User Login
- * @param  string password Password
- * @param {Function} callback CallBack Function
+ * 
+ * @param  {string}   user     User Login
+ * @param  {string}   password Password
+ * @param  {Function} callback CallBack Function
  */
 netWf.login = function(user, password, callback){
     var url = "/user"
@@ -187,8 +185,8 @@ netWf.login = function(user, password, callback){
 
 /**
  * Validate Key
- *
- * @param {Function} callback CallBack Function
+ * 
+ * @param  {Function} callback CallBack Function
  */
 netWf.validateKey = function(callback) {
 	var url = "/key";
@@ -206,18 +204,17 @@ netWf.validateKey = function(callback) {
 }
 
 /**
- * Get Key
- *
- * @return string
+ * Get netWf Key
+ * 
+ * @return {string}
  */
 netWf.getKey = function() {
 	return localStorage.netkey;
 }
 
 /**
- * Save Key
- *
- * @param string key Valid Key
+ * Save Key on LocalStorage
+ * @param  {string} key Valid Key
  */
 netWf.saveKey = function(key) {
 	localStorage.netkey = key;
