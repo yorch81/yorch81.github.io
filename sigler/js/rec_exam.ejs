@@ -1,0 +1,10 @@
+<% for(var i=0; i<data.length; i++) { %>   
+	<% if(data[i]['status'] == 0){ %>
+		<button class="btn btn-lg btn-pet-b" onclick="recExm.loadExam(<%= data[i]['idexamen'] %>, <%= data[i]['status'] %>)"> <%= data[i]['descripcion'] %></button>
+    <% } else if(data[i]['status'] == 1){ %>  
+        <button disabled class="btn btn-lg btn-pet-g" onclick="recExm.loadExam(<%= data[i]['idexamen'] %>, <%= data[i]['status'] %>)"> <%= data[i]['descripcion'] %></button>
+    <% } else{ %>  
+        <button disabled class="btn btn-lg btn-pet-g" onclick="recExm.loadExam(<%= data[i]['idexamen'] %>, <%= data[i]['status'] %>)"> <%= data[i]['descripcion'] %></button>
+    <% } %>
+    <br/>
+<% } %>

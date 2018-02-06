@@ -1,0 +1,10 @@
+<div class="radio">
+<% for(var i=0; i<data.length; i++) { %>    
+	<label>
+	  <input type="radio" name="optradio" value="<%= data[i]['idresp'] %>">
+	  <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+	  <p><%= data[i]['respuesta'] %></p>
+  	</label>
+  	<br/>
+<% } %>
+</div>

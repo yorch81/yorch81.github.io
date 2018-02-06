@@ -1,0 +1,406 @@
+.btn-facebook {
+  background-color: #3b5998 !important;
+  border-color: #3b5998 !important;
+  color: #fff !important;
+}
+
+.btn-google {
+  background-color: #dd4b39 !important;
+  border-color: #dd4b39 !important;
+  color: #fff !important;
+}
+
+/* PetRide Buttons */
+.btn-pet {
+  background-color:#ffbb00 !important;
+  border-color: #ffbb00 !important;
+  color: #fff !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+}
+
+.btn-pet:hover {
+  background-color:#DCA200 !important;
+  border-color: #DCA200 !important;
+  color: #fff !important;
+}
+
+.btn-pet:focus {
+  background-color:#DCA200 !important;
+  border-color: #DCA200 !important;
+  color: #fff !important;
+}
+
+.btn-pet-o {
+  color: #ffbb00 !important;
+  border-color: #ffbb00 !important;
+  background-color: transparent !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+}
+
+.btn-pet-o:hover {
+  background-color:#DCA200 !important;
+  border-color: #DCA200 !important;
+  color: #fff !important;
+}
+
+.btn-pet-o:focus {
+  background-color:#DCA200 !important;
+  border-color: #DCA200 !important;
+  color: #fff !important;
+}
+
+.btn-pet-g {
+  background-color:#837785 !important;
+  border-color: #837785 !important;
+  color: #fff !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+}
+
+.btn-pet-g:hover {
+  background-color:#a498a6 !important;
+  border-color: #a498a6 !important;
+  color: #fff !important;
+}
+
+.btn-pet-g:focus {
+  background-color:#a498a6 !important;
+  border-color: #a498a6 !important;
+  color: #fff !important;
+}
+
+.btn-pet-og {
+  color: #837785 !important;
+  border-color: #837785 !important;
+  background-color: transparent !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+}
+
+.btn-pet-og:hover {
+  background-color:#a498a6 !important;
+  border-color: #a498a6 !important;
+  color: #fff !important;
+}
+
+.btn-pet-og:focus {
+  background-color:#a498a6 !important;
+  border-color: #a498a6 !important;
+  color: #fff !important;
+}
+
+.btn-pet-b {
+  background-color:#65A387 !important;
+  border-color: #65A387 !important;
+  color: #fff !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+}
+
+.btn-pet-b:hover {
+  background-color:#497E66 !important;
+  border-color: #497E66 !important;
+  color: #fff !important;
+}
+
+.btn-pet-b:focus {
+  background-color:#497E66 !important;
+  border-color: #497E66 !important;
+  color: #fff !important;
+}
+
+.btn-pet-ob {
+  color: #65A387 !important;
+  border-color: #65A387 !important;
+  background-color: transparent !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+}
+
+.btn-pet-ob:hover {
+  background-color:#497E66 !important;
+  border-color: #497E66 !important;
+  color: #fff !important;
+}
+
+.btn-pet-ob:focus {
+  background-color:#497E66 !important;
+  border-color: #497E66 !important;
+  color: #fff !important;
+}
+
+/** PetRide Borders **/
+.form-control {
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #DFD8E0;
+}
+
+.form-control:focus {
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #DFD8E0;
+}
+
+.input-group-addon {
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #DFD8E0;
+}
+
+/* Icon TextBox */
+.fa.form-control-feedback {
+  line-height: 34px; /* @input-height-base; */
+}
+.input-sm ~ .fa.form-control-feedback {
+  line-height: 30px; /* @input-height-base; */
+}
+.input-lg ~ .fa.form-control-feedback {
+  line-height: 46px; /* @input-height-base; */
+}
+
+.has-feedback-left input.form-control {
+  padding-left: 34px; /* @input-height-base; */
+  padding-right: 12px; /* @padding-base-horizontal */
+}
+
+.has-feedback-left .form-control-feedback {
+  left: 0; 
+}
+.form-horizontal .has-feedback-left .form-control-feedback {
+  left: 12px; /* @grid-gutter-width / 2 */
+}
+
+.has-feedback-left input.input-sm {
+  padding-left: 30px;  @input-height-small;
+}
+.has-feedback-left input.input-lg {
+  padding-left: 46px;  @input-height-large;
+}
+
+.pet-icon {
+  color: #A498A6 !important;
+}
+
+.pet-icon-lg {
+  color: #A498A6 !important;
+  padding-left: 6px !important; 
+  padding-top: 6px !important;
+}
+
+ /** PetRide Notifications **/
+#notifications {
+  cursor: pointer;
+  position: fixed;
+  right: 0px;
+  z-index: 9999;
+  bottom: 0px;
+  margin-bottom: 22px;
+  margin-right: 15px;
+  max-width: 300px;
+}
+
+.alert {
+  color: white;
+  background-color: #a498a6;
+  border-color: #a498a6;
+  font-size: 13px;
+}
+
+/* Modal Centered */
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Styled Check & Radio */
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .30em;
+    width: 1.8em;
+    height: 1.8em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    -webkit-transform: scale(3) rotateZ(-20deg);
+    -moz-transform: scale(3) rotateZ(-20deg);
+    -ms-transform: scale(3) rotateZ(-20deg);
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    -webkit-transform: scale(1) rotateZ(0deg);
+    -moz-transform: scale(1) rotateZ(0deg);
+    -ms-transform: scale(1) rotateZ(0deg);
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+/* PetRide Fonts */
+body {
+  background-color: #fbfbfb;
+  color: #222;
+  font-size: 1.125em; /* font-size: 18px; */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
+}
+
+p {
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125em; /* font-size: 18px; */
+  line-height: 1.8;
+}
+
+.navbar {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.img_nav {
+  max-width: 190%;
+  max-height: 190%;
+}
+
+/* Bootstrap Toggle */
+.btn-warning {
+  background-color:#ffbb00 !important;
+  border-color: #ffbb00 !important;
+  color: #fff !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+}
+
+/* Progress Bar PetRide */
+.progress-bar-pet {
+  background-color:#ffd86e !important;
+}
+
+/* Disable Button Effect */
+.btn:focus {
+  outline: none;
+}
+
+/*
+input[type=text] {
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #DFD8E0;
+}
+
+input[type=text]:focus {
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #DFD8E0;
+}*/
+
+/* Modal Zoom Effect Phonegap */
+/*
+.modal.fade .modal-dialog {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+.modal.fade.in .modal-dialog {
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}*/
+
+/* Modal Effect Phonegap */
+/*
+.modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 300px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -300px, 0);
+    transform: translate3d(0, -300px, 0);
+    opacity: 1;
+}*/
+
+
